@@ -1,4 +1,4 @@
-# Fundraising Platform for Ethiopian Start-Ups
+# BrightFund for Ethiopian Start-Ups
 
 Welcome to BrightFund Fundraising Platform for Ethiopian Start-Ups! This project aims to streamline the funding process for start-up companies in Ethiopia by leveraging cutting-edge AI and machine learning technology. Our platform provides a secure, efficient, and user-friendly environment for start-ups to connect with investors, manage fundraising campaigns.
 
