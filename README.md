@@ -15,13 +15,23 @@ Our platform offers the following features and functionalities:
 
 ## Technical Stack
 
+Tools: 
+Git: For version control and collaboration.
+PostgreSQL: For database management, storing user data, campaign details, and transaction records.
+Docker: For containerization to ensure consistency across different development and production environments.
+Render: For backend deployment services to ensure scalability and reliability.
+Vercel:  for Frontend Deployment Services
+Jupyter Notebook: For developing and testing machine learning models.
+
 ### Programming Languages
 - **JavaScript:** For front-end development to build interactive user interfaces.
 - **Python:** For backend development to handle server-side logic and AI model integration.
 
 ### Frameworks/Libraries
 - **React:** For building the web application front-end.
-- **DjanGo:** For server-side development and handling API requests.
+- **Tailwind:**  as a CSS Framework.
+- **ShadCN:** As a react Hook.
+- **FastAPI:** For server-side development and handling API requests.
 - **TensorFlow:** For developing and implementing AI algorithms and machine learning models.
 - **ZuStand:** For state management in the front-end application.
 
