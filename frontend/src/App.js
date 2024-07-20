@@ -1,12 +1,16 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
+import LandingPage from './pages/LandingPage/Landing';
+
 
 function App() {
   return (
     <div className="App">
-      <p className='text-blue-500 text-4xl'>
-        Bright FundRasing App
-      </p>
+      <Router>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
