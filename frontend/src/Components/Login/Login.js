@@ -2,11 +2,11 @@ import React from 'react'
 import React, { useState } from 'react';
 
 const Login = () => {
-    const [username, setUsername] = useState('');
+    const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    const handleUsernameChange = (e) => {
-        setUsername(e.target.value);
+    const handleEmailChange = (e) => {
+        setEmail(e.target.value);
     };
 
     const handlePasswordChange = (e) => {
@@ -17,7 +17,7 @@ const Login = () => {
         e.preventDefault();
         // Perform login logic here
         console.log('Username:', username);
-        console.log('Password:', password);
+        console.log('email:', email);
     };
 
     return (
@@ -25,12 +25,12 @@ const Login = () => {
             <h2>Login</h2>
             <form onSubmit={handleSubmit}>
                 <div>
-                    <label htmlFor="username">Username:</label>
+                    <label htmlFor="Email">Email:</label>
                     <input
-                        type="text"
-                        id="username"
-                        value={username}
-                        onChange={handleUsernameChange}
+                        type="email"
+                        id="email"
+                        value={email}
+                        onChange={handleEmailChange}
                     />
                 </div>
                 <div>
