@@ -48,8 +48,3 @@ const ResetPassword = () => {
 
 export default ResetPassword;
       
-    </div>
-  )
-}
-
-export default ResetPassword
