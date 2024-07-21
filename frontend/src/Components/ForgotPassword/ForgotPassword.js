@@ -1,5 +1,5 @@
-import React from 'react'
 import React, { useState } from 'react';
+import './ForgotPassword.css'
 
 const ForgotPassword = () => {
     const [email, setEmail] = useState('');
@@ -17,19 +17,19 @@ const ForgotPassword = () => {
     };
 
     return (
-        <div>
-            <h2>Forgot Password</h2>
-            <form onSubmit={handleSubmit}>
-                <label htmlFor="email">Email:</label>
-                <input
-                    type="email"
-                    id="email"
-                    value={email}
-                    onChange={handleEmailChange}
-                />
-                <button type="submit">Reset Password</button>
-            </form>
-        </div>
+        <div class="form-container">
+	<p class="title">Forgot Password</p>
+	<form class="form">
+		<div class="input-group">
+			<label for="username">Email</label>
+			<input type="email" name="email" id="email" placeholder=""/>
+		</div>
+		<button class="sign" ><a href='/reset'>Submit</a></button>
+	</form>
+	<p class="signup">Don't have an account?
+		<a rel="noopener noreferrer" href="/register" class="">Sign up</a>
+	</p>
+</div>
     );
 };
 

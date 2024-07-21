@@ -47,19 +47,24 @@ const LandingPage = () => {
 
     return (
         <div className='landing-page'>
+            <div>
 
+            </div>
             <div className='header-container'>
                 <div className='sub-heading'>
                     <h1>Funding Platforms for Startups</h1>
                     <p>Fundraising platforms connect ambitious startups with accredited investors, providing tools to pitch ideas, research companies, and manage investments.</p>
 
                     <div className='py-4'>
-                        <button className='explore-btn'>
+                    <Link to='/register'>
+                    <button className='explore-btn'>
                             Explore Platforms
-                        </button>
-                        <button className='find_investor_btn'>
-                            Find Investors
-                        </button>
+                        </button></Link>
+
+                        <Link to='/register'>
+                    <button className='find_investor_btn'>
+                    Find Investors
+                        </button></Link>
                     </div>
 
                 </div>
@@ -382,12 +387,15 @@ const LandingPage = () => {
                     <p>Fundraising platforms connect ambitious startups with accredited investors, providing tools to pitch ideas, research companies, and manage investments.</p>
 
                     <div className='py-4'>
-                        <button className='explore-btn'>
+                    <Link to='/register'>
+                    <button className='explore-btn'>
                             Explore Platforms
-                        </button>
-                        <button className='find_investor_btn'>
-                            Find Investors
-                        </button>
+                        </button></Link>
+
+                        <Link to='/register'>
+                    <button className='find_investor_btn'>
+                    Find Investors
+                        </button></Link>
                     </div>
 
                 </div>
