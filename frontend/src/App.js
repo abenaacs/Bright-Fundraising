@@ -5,6 +5,7 @@ import Login from './Components/Login/Login';
 import Register from './Components/Register/register';
 import ResetPassword from './Components/ResetPassword/ResetPassword';
 import ForgotPassword from './Components/ForgotPassword/ForgotPassword';
+import Role from './Components/Role/role';
 
 
 function App() {
@@ -17,6 +18,8 @@ function App() {
           <Route path='/register' element={<Register/>} />
           <Route path='/reset' element={<ResetPassword/>} />
           <Route path='/forgot' element={<ForgotPassword/>} />
+          <Route path='/role' element={<Role/>} />
+
           
 
         </Routes>

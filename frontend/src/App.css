@@ -36,9 +36,7 @@ body {
   color: var(--color-text);
   font-family: var(--font-primary);
   font-size: var(--font-size-medium);
-  background: var(--color-primary);
-  display: flex;
-  justify-content: center;
+  background: var(--color-primary); 
 }
 
 h1 {

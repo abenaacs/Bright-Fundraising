@@ -56,12 +56,12 @@ const LandingPage = () => {
                     <p>Fundraising platforms connect ambitious startups with accredited investors, providing tools to pitch ideas, research companies, and manage investments.</p>
 
                     <div className='py-4'>
-                    <Link to='/register'>
+                    <Link to='/role'>
                     <button className='explore-btn'>
                             Explore Platforms
                         </button></Link>
 
-                        <Link to='/register'>
+                        <Link to='/role'>
                     <button className='find_investor_btn'>
                     Find Investors
                         </button></Link>
@@ -241,7 +241,7 @@ const LandingPage = () => {
             <div className='faq-top-container'>
 
                 <div id="faq" className="faq-container">
-                    <h2 className='faq-heading'>Investment Management Features</h2>
+                    {/* <h2 className='faq-heading'>Investment Management Features</h2> */}
                     {faqs.map((faq) => (
                         <div key={faq.id} className="faq-item">
                             <div className="faq-header">
@@ -387,12 +387,12 @@ const LandingPage = () => {
                     <p>Fundraising platforms connect ambitious startups with accredited investors, providing tools to pitch ideas, research companies, and manage investments.</p>
 
                     <div className='py-4'>
-                    <Link to='/register'>
+                    <Link to='/role'>
                     <button className='explore-btn'>
                             Explore Platforms
                         </button></Link>
 
-                        <Link to='/register'>
+                        <Link to='/role'>
                     <button className='find_investor_btn'>
                     Find Investors
                         </button></Link>
