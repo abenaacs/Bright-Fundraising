@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link, useRoutes, useSearchParams } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import RegisterCommon from './RegisterCommon';
 import RegisterFundraiser from './RegisterFundraiser';
 import RegisterInvestor from './RegisterInvestor';

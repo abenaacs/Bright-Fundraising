@@ -8,10 +8,10 @@ import './App.css';
 import Navbar from './Components/Navbar/Navbar';
 import LandingPage from './pages/LandingPage/Landing';
 import LoginPage from './pages/LoginPage/LoginPage';
-import Register from './Components/Register/register';
 import ResetPassword from './Components/ResetPassword/ResetPassword';
 import ForgotPassword from './Components/ForgotPassword/ForgotPassword';
 import Role from './Components/Role/role';
+import RegisterPage from './pages/RegisterPage/RegisterPage';
 
 // Define the main App component
 function App() {
@@ -31,7 +31,7 @@ function App() {
           <Route path='/login' element={<LoginPage />} />
 
           {/* Route for the registration page */}
-          <Route path='/register' element={<Register />} />
+          <Route path='/register' element={<RegisterPage />} />
 
           {/* Route for the password reset page */}
           <Route path='/reset' element={<ResetPassword />} />
