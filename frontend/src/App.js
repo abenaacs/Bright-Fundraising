@@ -12,6 +12,7 @@ import ResetPassword from './Components/ResetPassword/ResetPassword';
 import ForgotPassword from './Components/ForgotPassword/ForgotPassword';
 import Role from './Components/Role/role';
 import RegisterPage from './pages/RegisterPage/RegisterPage';
+import MyCampaignPage from './pages/MyCampaign/MyCampaignPage';
 
 // Define the main App component
 function App() {
@@ -41,6 +42,9 @@ function App() {
 
           {/* Route for the role selection page */}
           <Route path='/role' element={<Role />} />
+
+          {/* Route for the user to see list of campaigns */}
+          <Route path='/myCampaign' element={<MyCampaignPage/>}/>
 
           {/* Additional routes can be added here as needed */}
         </Routes>
