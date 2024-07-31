@@ -11,6 +11,7 @@ import LoginPage from './pages/LoginPage/LoginPage';
 import ResetPassword from './Components/ResetPassword/ResetPassword';
 import ForgotPassword from './Components/ForgotPassword/ForgotPassword';
 import Role from './Components/Role/role';
+import CreateCampaigns from './Components/Campaigns/CreateCamp';
 import RegisterPage from './pages/RegisterPage/RegisterPage';
 import MyCampaignPage from './pages/MyCampaign/MyCampaignPage';
 
@@ -47,6 +48,8 @@ function App() {
           <Route path='/myCampaign' element={<MyCampaignPage/>}/>
 
           {/* Additional routes can be added here as needed */}
+          {/* Route for the create campaigns page */}
+          <Route path='/campaigns' element={<CreateCampaigns />} />
         </Routes>
       </Router>
     </div>

@@ -21,7 +21,7 @@ const Navbar = () => {
     const toggleMenu = () => setShowMenu(!showMenu);
 
     // Dynamic classes based on scroll position
-    const navClassName = `fixed z-30 w-full ${scrollUp ? 'navbar_bg' : 'bg-transparent'}`;
+    const navClassName = `fixed py-2 z-30 w-full ${scrollUp ? 'navbar_bg' : 'bg-transparent'}`;
     const textColorClass = 'text-white';
 
     // Common styles
@@ -49,7 +49,7 @@ const Navbar = () => {
                     <div className="flex items-center">
                         <NavLink to='/'>
                             <div className="kendil flex items-center justify-center">
-                                <div id="main_heading">Bright Fundraising</div>
+                                <div id="main_heading">Ultimatum</div>
                             </div>
                         </NavLink>
 
