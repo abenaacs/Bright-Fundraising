@@ -21,7 +21,7 @@ const Navbar = () => {
     const toggleMenu = () => setShowMenu(!showMenu);
 
     // Dynamic classes based on scroll position
-    const navClassName = `fixed z-30 w-full ${scrollUp ? 'navbar_bg' : 'bg-transparent'}`;
+    const navClassName = `fixed py-2 z-30 w-full ${scrollUp ? 'navbar_bg' : 'bg-transparent'}`;
     const textColorClass = 'text-white';
 
     // Common styles
