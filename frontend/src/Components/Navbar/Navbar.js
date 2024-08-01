@@ -49,7 +49,7 @@ const Navbar = () => {
                     <div className="flex items-center">
                         <NavLink to='/'>
                             <div className="kendil flex items-center justify-center">
-                                <div id="main_heading">Bright Fundraising</div>
+                                <div id="main_heading">Ultimatum</div>
                             </div>
                         </NavLink>
 
