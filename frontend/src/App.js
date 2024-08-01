@@ -14,6 +14,7 @@ import Role from './Components/Role/role';
 import CreateCampaigns from './Components/Campaigns/CreateCamp';
 import RegisterPage from './pages/RegisterPage/RegisterPage';
 import MyCampaignPage from './pages/MyCampaign/MyCampaignPage';
+import DetailCampaign from './pages/DetailCampaignPage/DetailCampaign';
 
 // Define the main App component
 function App() {
@@ -47,9 +48,13 @@ function App() {
           {/* Route for the user to see list of campaigns */}
           <Route path='/myCampaign' element={<MyCampaignPage/>}/>
 
-          {/* Additional routes can be added here as needed */}
           {/* Route for the create campaigns page */}
           <Route path='/campaigns' element={<CreateCampaigns />} />
+
+          {/* Route for the details of the specific campaign */}
+          <Route path='/detailCampaign' element={<DetailCampaign />} />
+
+          {/* Additional routes can be added here as needed */}
         </Routes>
       </Router>
     </div>

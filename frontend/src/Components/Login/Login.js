@@ -38,7 +38,7 @@ const LoginForm = () => {
                     <input
                         type="email"
                         required
-                        className="bg-[#d9e1ff] w-[300px] rounded-md md:h-[32px] h-[28px] text-black px-5 md:w-[580px]"
+                        className="bg-[#d9e1ff] w-[300px] rounded-md text-black px-5 md:w-[580px]"
                         value={email}
                         onChange={handleEmailChange}
                     />
@@ -52,7 +52,7 @@ const LoginForm = () => {
                     <input
                         type="password"
                         required
-                        className="bg-[#d9e1ff] w-[300px] rounded-md md:h-[32px] h-[28px] text-black px-5 md:w-[580px]"
+                        className="bg-[#d9e1ff] w-[300px] rounded-md text-black px-5 md:w-[580px]"
                         value={password}
                         onChange={handlePasswordChange}
                     />

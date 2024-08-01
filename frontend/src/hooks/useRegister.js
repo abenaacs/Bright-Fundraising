@@ -5,15 +5,15 @@ const useRegister = () => {
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false);
 
-    const register = async (email, password) => {
+    const register = async (formData) => {
+        console.log("User data: ", formData);
         try {
             // Set the loading state to true
             setLoading(true);
 
             // Make a POST request to the login endpoint
             const response = await axios.post('/api/login', {
-                email,
-                password,
+                formData
             });
 
             // If the login is successful, the server should return a token or other relevant data

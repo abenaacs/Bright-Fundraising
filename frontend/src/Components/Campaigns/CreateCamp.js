@@ -542,7 +542,7 @@ const MultiStepForm = () => {
                                     {step}
                                 </div>
                                 <div className="hidden md:block text-gray-600">
-                                    {step === 1 ? 'Campaign Info' : step === 2 ? 'Pitch Deck and Media' : step === 3 ? ' Funding Details' : step === 4 ? 'Contact Info' : step === 5 ? 'Review and Submit' : null}
+                                    {step === 1 ? 'Campaign Info' : step === 2 ? 'Pitch Deck and Motivation' : step === 3 ? ' Funding Details' : step === 4 ? 'Contact Info' : step === 5 ? 'Review and Submit' : null}
                                 </div>
                             </div>
                         ))}
