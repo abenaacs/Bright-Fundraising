@@ -15,6 +15,7 @@ import CreateCampaigns from './Components/Campaigns/CreateCamp';
 import RegisterPage from './pages/RegisterPage/RegisterPage';
 import MyCampaignPage from './pages/MyCampaign/MyCampaignPage';
 import DetailCampaign from './pages/DetailCampaignPage/DetailCampaign';
+import DashboardPage from './pages/DashboardPage/DashboardPage';
 
 // Define the main App component
 function App() {
@@ -46,13 +47,16 @@ function App() {
           <Route path='/role' element={<Role />} />
 
           {/* Route for the user to see list of campaigns */}
-          <Route path='/myCampaign' element={<MyCampaignPage/>}/>
+          <Route path='/myCampaign' element={<MyCampaignPage />} />
 
           {/* Route for the create campaigns page */}
           <Route path='/campaigns' element={<CreateCampaigns />} />
 
           {/* Route for the details of the specific campaign */}
           <Route path='/detailCampaign' element={<DetailCampaign />} />
+
+          {/* Route for the dashboard of the fundraiser user */}
+          <Route path='/dashboard' element={<DashboardPage />} />
 
           {/* Additional routes can be added here as needed */}
         </Routes>

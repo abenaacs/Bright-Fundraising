@@ -196,17 +196,18 @@ function DetailCampaign() {
 
                 {/* cotainer for the Personalized and Motivation letter */}
                 <div class="w-full px-6 py-8 bg-gray-50 rounded-lg">
-                    <div class="text-2xl font-bold text-center mb-6 text-black">Personalized Message and Motivation Letter</div>
-
+                    <div class="text-2xl font-bold text-center mb-6 text-black">Personalized Message</div>
                     <div class="mb-8">
-                        <div class="font-bold text-gray-800">Personalized Message:</div>
+                        {/* <div class="font-bold text-gray-800">Personalized Message:</div> */}
                         <p class="text-gray-600 mt-2">
                             {detailedCampaignData.personalizedMessage}
                         </p>
                     </div>
-
-                    <div>
-                        <div class="font-bold text-gray-800">Motivation Letter:</div>
+                </div>
+                <div class="w-full px-6 py-8 bg-gray-50 rounded-lg mt-10">
+                    <div class="text-2xl font-bold text-center mb-6 text-black">Motivation Letter</div>
+                    <div class="mb-8">
+                        {/* <div class="font-bold text-gray-800">Personalized Message:</div> */}
                         <p class="text-gray-600 mt-2">
                             {detailedCampaignData.motivationLetter}
                         </p>
