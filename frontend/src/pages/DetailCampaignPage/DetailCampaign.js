@@ -76,70 +76,70 @@ function DetailCampaign() {
 
             {/* container to all of the details of the campaign */}
             <div>
-                <h2>{detailedCampaignData.title}</h2>
+                <h2 className='lg:text-5xl md:text-3xl text-2xl'>{detailedCampaignData.title}</h2>
 
                 {/* container for the description of the campaign */}
                 <div className='mt-5'>
-                    <h3>Description</h3>
-                    <p className='text-gray-500 text-md'>{detailedCampaignData.description}</p>
+                    <h3 className='text-xl md:text-2xl'>Description</h3>
+                    <p className='text-gray-500 md:text-lg text-sm'>{detailedCampaignData.description}</p>
                 </div>
-                <div className='grid grid-cols-3'>
+                <div className='grid lg:grid-cols-3 grid-cols-1'>
                     {/* card layout for the funding details part */}
-                    <div class="bg-white shadow-lg rounded-lg p-6 max-w-md my-8">
-                        <div class="text-2xl text-black font-bold text-center mb-6">Funding Details</div>
+                    <div class="bg-white shadow-lg rounded-lg p-6 max-w-md mx-auto w-full my-8">
+                        <div class="md:text-2xl text-xl text-black font-bold text-center mb-6">Funding Details</div>
 
                         <div class="border-b border-gray-300 py-4">
-                            <div class="font-bold text-gray-800">Target Amount:</div>
-                            <div class="text-gray-600">${detailedCampaignData.fundingDetails.targetAmount}</div>
+                            <div class="lg:text-md text-sm font-bold text-gray-800">Target Amount:</div>
+                            <div class="lg:text-md text-sm text-gray-600">${detailedCampaignData.fundingDetails.targetAmount}</div>
                         </div>
 
                         <div class="border-b border-gray-300 py-4">
-                            <div class="font-bold text-gray-800">Funding Type:</div>
-                            <div class="text-gray-600">{detailedCampaignData.fundingDetails.fundingType}</div>
+                            <div class="lg:text-md text-sm font-bold text-gray-800">Funding Type:</div>
+                            <div class="lg:text-md text-sm text-gray-600">{detailedCampaignData.fundingDetails.fundingType}</div>
                         </div>
 
                         <div class="border-b border-gray-300 py-4">
-                            <div class="font-bold text-gray-800">Deadline:</div>
-                            <div class="text-gray-600">{detailedCampaignData.fundingDetails.deadline}</div>
+                            <div class="lg:text-md text-sm font-bold text-gray-800">Deadline:</div>
+                            <div class="lg:text-md text-sm text-gray-600">{detailedCampaignData.fundingDetails.deadline}</div>
                         </div>
 
                         <div class="border-b border-gray-300 py-4">
-                            <div class="font-bold text-gray-800">Progress:</div>
+                            <div class="lg:text-md text-sm font-bold text-gray-800">Progress:</div>
                             <div class="bg-gray-300 rounded-full overflow-hidden mt-2">
                                 <div class="bg-purple-400 h-5 rounded-full" style={{ width: `${detailedCampaignData.fundingDetails.progress}` }}></div>
                             </div>
                         </div>
 
                         <div class="border-b border-gray-300 py-4">
-                            <div class="font-bold text-gray-800">Funds Raised:</div>
-                            <div class="text-gray-600">${detailedCampaignData.fundingDetails.fundsRaised}</div>
+                            <div class="lg:text-md text-sm font-bold text-gray-800">Funds Raised:</div>
+                            <div class="lg:text-md text-sm text-gray-600">${detailedCampaignData.fundingDetails.fundsRaised}</div>
                         </div>
 
                         <div class="py-4">
-                            <div class="font-bold text-gray-800">Minimum Investment:</div>
-                            <div class="text-gray-600">${detailedCampaignData.fundingDetails.minimumInvestment}</div>
+                            <div class="lg:text-md text-sm font-bold text-gray-800">Minimum Investment:</div>
+                            <div class="lg:text-md text-sm text-gray-600">${detailedCampaignData.fundingDetails.minimumInvestment}</div>
                         </div>
                     </div>
 
                     {/* card layout for the Company info part */}
                     <div class="bg-white shadow-lg rounded-lg p-6 max-w-md mx-auto my-8">
-                        <div class="text-2xl text-black font-bold text-center mb-6">Company Info</div>
+                        <div class="md:text-2xl text-xl text-black font-bold text-center mb-6">Company Info</div>
 
                         <div class="border-b border-gray-300 py-4">
-                            <div class="font-bold text-gray-800">Company Name:</div>
-                            <div class="text-gray-600">{detailedCampaignData.companyInfo.name}</div>
+                            <div class="lg:text-md text-sm font-bold text-gray-800">Company Name:</div>
+                            <div class="lg:text-md text-sm text-gray-600">{detailedCampaignData.companyInfo.name}</div>
                         </div>
 
                         <div class="border-b border-gray-300 py-4">
-                            <div class="font-bold text-gray-800">Overview:</div>
-                            <div class="text-gray-600">
+                            <div class="lg:text-md text-sm font-bold text-gray-800">Overview:</div>
+                            <div class="lg:text-md text-sm text-gray-600">
                                 {detailedCampaignData.companyInfo.overview}
                             </div>
                         </div>
 
                         <div class="py-4">
-                            <div class="font-bold text-gray-800">Team:</div>
-                            <div class="text-gray-600">
+                            <div class="lg:text-md text-sm font-bold text-gray-800">Team:</div>
+                            <div class="lg:text-md text-sm text-gray-600">
                                 {detailedCampaignData.companyInfo.team.map((team, index) => (
                                     <ul class="list-disc list-inside">
                                         <li id={index}>{team.name} ({team.role})</li>
@@ -151,42 +151,42 @@ function DetailCampaign() {
 
                     {/* Card layout for the contact info of the user */}
                     <div class="bg-white shadow-lg rounded-lg p-6 max-w-md w-full mx-auto my-8">
-                        <div class="text-2xl font-bold text-center text-black mb-6">Contact Information</div>
+                        <div class="md:text-2xl text-xl font-bold text-center text-black mb-6">Contact Information</div>
 
                         <div class="mb-4">
-                            <div class="font-bold text-gray-800">Name:</div>
-                            <div class="text-gray-600">{detailedCampaignData.contactInformation.name}</div>
+                            <div class="lg:text-md text-sm font-bold text-gray-800">Name:</div>
+                            <div class="lg:text-md text-sm text-gray-600">{detailedCampaignData.contactInformation.name}</div>
                         </div>
 
                         <div class="mb-4">
-                            <div class="font-bold text-gray-800">Phone:</div>
-                            <div class="text-gray-600">{detailedCampaignData.contactInformation.phone}</div>
+                            <div class="lg:text-md text-sm font-bold text-gray-800">Phone:</div>
+                            <div class="lg:text-md text-sm text-gray-600">{detailedCampaignData.contactInformation.phone}</div>
                         </div>
 
                         <div class="mb-4">
-                            <div class="font-bold text-gray-800">Address:</div>
-                            <div class="text-gray-600">{detailedCampaignData.contactInformation.address}</div>
+                            <div class="lg:text-md text-sm font-bold text-gray-800">Address:</div>
+                            <div class="lg:text-md text-sm text-gray-600">{detailedCampaignData.contactInformation.address}</div>
                         </div>
 
                         <div>
-                            <div class="font-bold text-gray-800">Email:</div>
-                            <div class="text-gray-600">{detailedCampaignData.contactInformation.email}</div>
+                            <div class="lg:text-md text-sm font-bold text-gray-800">Email:</div>
+                            <div class="lg:text-md text-sm text-gray-600">{detailedCampaignData.contactInformation.email}</div>
                         </div>
                     </div>
                 </div>
 
                 {/* Container for the pitch and media part */}
                 <div class="w-full px-6 py-8">
-                    <h3 class="font-bold mb-6 text-white">Pitch and Media</h3>
+                    <h3 class="font-bold mb-6 text-xl md:text-2xl text-white">Pitch and Media</h3>
 
                     <div class="mb-8 flex items-center gap-5">
-                        <h4 class="font-bold">Pitch Deck:</h4>
-                        <a href={detailedCampaignData.mediaAndPitch.pitchDeck} class="text-teal-500 hover:underline">View Pitch Deck</a>
+                        <h4 class="font-bold text-sm md:text-xl">Pitch Deck:</h4>
+                        <a href={detailedCampaignData.mediaAndPitch.pitchDeck} class="text-teal-500 hover:underline text-sm md:text-xl">View Pitch Deck</a>
                     </div>
 
                     <div class="mb-8">
                         <h4 class="font-bold">Media Gallery:</h4>
-                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-2">
+                        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-2">
                             {detailedCampaignData.mediaAndPitch.media.map((media, index) => (
                                 <img id={index} src={media} alt="Image 1" class="rounded-lg shadow-md h-[190px] w-full" />
                             ))}
@@ -196,19 +196,19 @@ function DetailCampaign() {
 
                 {/* cotainer for the Personalized and Motivation letter */}
                 <div class="w-full px-6 py-8 bg-gray-50 rounded-lg">
-                    <div class="text-2xl font-bold text-center mb-6 text-black">Personalized Message</div>
+                    <div class="md:text-2xl text-xl font-bold text-center mb-6 text-black">Personalized Message</div>
                     <div class="mb-8">
                         {/* <div class="font-bold text-gray-800">Personalized Message:</div> */}
-                        <p class="text-gray-600 mt-2">
+                        <p class="text-sm md:text-xl text-gray-600 mt-2">
                             {detailedCampaignData.personalizedMessage}
                         </p>
                     </div>
                 </div>
                 <div class="w-full px-6 py-8 bg-gray-50 rounded-lg mt-10">
-                    <div class="text-2xl font-bold text-center mb-6 text-black">Motivation Letter</div>
+                    <div class="md:text-2xl text-xl font-bold text-center mb-6 text-black">Motivation Letter</div>
                     <div class="mb-8">
                         {/* <div class="font-bold text-gray-800">Personalized Message:</div> */}
-                        <p class="text-gray-600 mt-2">
+                        <p class="text-sm md:text-xl text-gray-600 mt-2">
                             {detailedCampaignData.motivationLetter}
                         </p>
                     </div>
