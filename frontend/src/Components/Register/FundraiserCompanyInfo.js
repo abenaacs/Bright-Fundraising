@@ -73,7 +73,7 @@ function RegisterFundraiser({ formData, setFormData }) {
                     className='bg-[#d9e1ff] w-[300px] rounded-md text-black px-5 md:w-[580px]' />
             </div>
             <div className='flex flex-col gap-0'>
-                <label><h4 className='text-lg md:text-xl'>ID (Passport, Driver's License, or Kebele ID)</h4></label>
+                <label><h4 className='text-lg md:text-xl'>ID <span className='text-sm md:text-xl'>(Passport, Driver's License, or Kebele ID)</span></h4></label>
                 <input
                     name='id'
                     value={formData.fundRaiser.id}

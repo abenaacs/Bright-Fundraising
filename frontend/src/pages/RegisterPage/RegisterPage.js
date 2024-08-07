@@ -3,7 +3,7 @@ import Register from '../../Components/Register/register'
 import signup from '../../assets/signup.png'
 function RegisterPage() {
   return (
-    <div className='lg:grid lg:grid-cols-2 lg:gap-5 flex h-screen justify-center items-center md:pt-80 lg:pt-10'>
+    <div className='lg:grid lg:grid-cols-2 lg:gap-5 flex pt-96 h-screen justify-center items-center md:pt-80 lg:pt-10'>
       <div className='pr-10 hidden md:hidden lg:flex lg:justify-center lg:mt-10'>
         <img src={signup} width={400} className='h-[600px]' />
       </div>
