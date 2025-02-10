@@ -4,12 +4,13 @@ import axios from 'axios';
 const useLogin = () => {
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false);
+    const [authToken, setAuthToken] = useState(null);
 
     const login = async (email, password) => {
-
         try {
             // Set the loading state to true
             setLoading(true);
+            setError(null);  // Reset previous errors
 
             // Make a POST request to the login endpoint
             const response = await axios.post('/api/login', {
@@ -17,27 +18,40 @@ const useLogin = () => {
                 password,
             });
 
-            // If the login is successful, the server should return a token or other relevant data
-            const { token } = response.data;
+            // Handle successful login
+            if (response.status === 200) {
+                const { token } = response.data;
 
-            // You can save the token to local storage or a cookie for future use
-            localStorage.setItem('authToken', token);
+                // Save the token in local storage or a cookie
+                localStorage.setItem('authToken', token);
+                setAuthToken(token);  // Store token in state for immediate use
 
-            // Reset the error and loading states
-            setError(null);
-            setLoading(false);
-
-            // Perform any additional logic after a successful login, such as redirecting the user
-            // or updating the application state
-            // ...
+                // Reset the loading and error states
+                setLoading(false);
+            }
         } catch (err) {
-            // If an error occurs during the login process, update the error and loading states
-            setError(err.response.data.message || 'An error occurred during login.');
+            // Handle errors and update the state with an appropriate message
             setLoading(false);
+            if (err.response) {
+                // Server returned an error
+                setError(err.response.data.message || 'An error occurred during login.');
+            } else if (err.request) {
+                // No response from server
+                setError('Server did not respond. Please check your internet connection.');
+            } else {
+                // Other errors (e.g., Axios misconfiguration)
+                setError('An unexpected error occurred.');
+            }
         }
     };
 
-    return { login, error, loading };
+    const logout = () => {
+        // Clear the stored auth token and reset the state
+        localStorage.removeItem('authToken');
+        setAuthToken(null);
+    };
+
+    return { login, error, loading, authToken, logout };
 };
 
 export default useLogin;
