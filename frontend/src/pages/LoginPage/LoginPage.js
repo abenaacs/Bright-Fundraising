@@ -3,8 +3,8 @@ import LoginForm from '../../Components/Login/Login';
 
 const LoginPage = () => {
     return (
-        <div className="md:grid md:grid-cols-2 md:gap-5 flex h-screen justify-center items-center">
-            <div className="pr-10 hidden md:flex">
+        <div className="lg:grid lg:grid-cols-2 lg:gap-5 flex h-screen justify-center items-center">
+            <div className="pr-10 hidden md:hidden lg:flex">
                 <img src={signin} width={400} height={400} className="w-full h-[700px]" />
             </div>
             <div>
