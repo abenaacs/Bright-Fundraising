@@ -1,14 +1,6 @@
 import { useState, useEffect } from 'react';
 import './Landing.css'
 import { Link } from 'react-router-dom';
-import { GiCandleFlame } from "react-icons/gi";
-import { MdLooksOne } from "react-icons/md";
-import { MdOutlineAttachEmail } from "react-icons/md";
-import { FaPhoneVolume } from "react-icons/fa6";
-import { PiNumberSquareTwoFill } from "react-icons/pi";
-import { PiNumberThreeFill } from "react-icons/pi";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faYoutube, faTelegram, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 
 //importing images//
@@ -47,19 +39,22 @@ const LandingPage = () => {
 
     return (
         <div className='landing-page'>
-
+            
             <div className='header-container'>
                 <div className='sub-heading'>
                     <h1>Funding Platforms for Startups</h1>
                     <p>Fundraising platforms connect ambitious startups with accredited investors, providing tools to pitch ideas, research companies, and manage investments.</p>
 
                     <div className='py-4'>
-                        <button className='explore-btn'>
-                            Explore Platforms
-                        </button>
-                        <button className='find_investor_btn'>
-                            Find Investors
-                        </button>
+                        <Link to='/role'>
+                            <button className='explore-btn'>
+                                Explore Platforms
+                            </button></Link>
+
+                        <Link to='/role'>
+                            <button className='find_investor_btn'>
+                                Find Investors
+                            </button></Link>
                     </div>
 
                 </div>
@@ -80,17 +75,14 @@ const LandingPage = () => {
                         <div className='catalog-item'>
                             <h3 className='heading'>Startup Discovery</h3>
                             <p className='mt-2'>Platforms allow investors to easily browse and discover promising startups across various industries and stages of growth.</p>
-                            {/* <img src={books} className='mt-4' style={{ width: '100px', height: 'auto' }} alt='Books' /> */}
                         </div>
                         <div className='catalog-item'>
                             <h3 className='heading'>Investor Matching</h3>
                             <p className='mt-2'>Startups can find the right investors that align with their vision, funding needs, and growth stage.</p>
-                            {/* <img src={search} className='mt-4' style={{ width: '100px', height: 'auto' }} alt='Search' /> */}
                         </div>
                         <div className='catalog-item'>
                             <h3 className='heading'>Relationship Building</h3>
                             <p className='mb-6'>These platforms facilitate conversations and connections between entrepreneurs and investors.</p>
-                            {/* <img src={instructor} style={{ width: '90px', height: 'auto' }} alt='Instructor' /> */}
                         </div>
                     </div>
                 </div>
@@ -102,7 +94,7 @@ const LandingPage = () => {
             <div class="feature-container flex">
                 <div class="top-container">
                     <div>
-                        <h2 className='main__heading'>Tools for Startup Pitches</h2>
+                        <h2 className='main_heading'>Tools for Startup Pitches</h2>
                     </div>
                     <div class="feature-sub-container">
                         <div className='pitch_deck'>
@@ -236,7 +228,7 @@ const LandingPage = () => {
             <div className='faq-top-container'>
 
                 <div id="faq" className="faq-container">
-                    <h2 className='faq-heading'>Investment Management Features</h2>
+                    {/* <h2 className='faq-heading'>Investment Management Features</h2> */}
                     {faqs.map((faq) => (
                         <div key={faq.id} className="faq-item">
                             <div className="faq-header">
@@ -262,7 +254,8 @@ const LandingPage = () => {
             <div className="startup_benefit_container">
                 <div className="assessment_heading_container">
                     <h2 className='comprensive-heading'>
-                        Benefits for Startups                    </h2>
+                        Benefits for Startups
+                    </h2>
                 </div>
                 <div className='assesment_sub_container'>
 
@@ -332,7 +325,7 @@ const LandingPage = () => {
 
 
             <div class="management_container">
-                <h2 className='py-10'>
+                <h2 class="comprehensive-heading text-center py-4">
                     Benefits for Investors
                 </h2>
                 <div class="management_sub">
@@ -381,13 +374,18 @@ const LandingPage = () => {
                     <h1>Funding Platforms for Startups</h1>
                     <p>Fundraising platforms connect ambitious startups with accredited investors, providing tools to pitch ideas, research companies, and manage investments.</p>
 
-                    <div className='py-4'>
-                        <button className='explore-btn'>
-                            Explore Platforms
-                        </button>
-                        <button className='find_investor_btn'>
-                            Find Investors
-                        </button>
+                    <div class="py-4 text-center md:text-left">
+                    <Link to='/role'>
+                            <button class="explore-btn  w-3/4 md:w-auto">
+                                Explore Platforms
+                            </button>
+                        </Link>
+
+                        <Link to='/role'>
+                            <button class="find_investor_btn w-full md:w-auto mt-4 md:mt-0 md:ml-4">
+                                Find Investors
+                            </button>
+                        </Link>
                     </div>
 
                 </div>
