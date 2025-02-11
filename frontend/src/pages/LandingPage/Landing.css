@@ -51,6 +51,53 @@ button.find_investor_btn {
     height: auto;
 }
 
+@media only screen and (max-width: 767px) {
+    .landing-page {
+        padding-top: 80px;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .header-container {
+        padding: 1.5rem;
+    }
+
+    .sub-heading h1 {
+        font-size: 2.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .sub-heading {
+        margin-bottom: 1.5rem;
+        max-width: 100%;
+    }
+
+    p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .find_investor_btn {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .explore-btn {
+        margin-bottom: 1rem;
+        margin-left: 20px;
+    }
+
+    .image-container {
+        margin-top: 2rem;
+        margin-bottom: 0;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+    }
+}
+
 
 
 
@@ -69,7 +116,7 @@ button.find_investor_btn {
         margin-bottom: 0;
     }
 
-    h1 {
+    .sub-heading h1 {
         font-size: 3rem;
         margin-bottom: 0.5rem;
     }
@@ -134,9 +181,27 @@ h3.heading {
 }
 
 @media (max-width: 768px) {
-    .catalog-container {
+    .catalog__container {
         flex-direction: column;
         align-items: center;
+    }
+
+    .catalog-item {
+        margin-bottom: -110px;
+    }
+
+    h3.heading {
+        margin-left: 0;
+        font-size: 1.5rem;
+    }
+
+    h2.main__heading {
+        font-size: 2.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .course__container {
+        padding: 3px;
     }
 }
 
@@ -224,6 +289,7 @@ span.feature-icon {
     .feature-container {
         flex-direction: column;
         align-items: stretch;
+        padding: 0px;
     }
 
     .image-container {
@@ -251,6 +317,13 @@ span.feature-icon {
     h1.contents-heading {
         font-size: 35px;
 
+    }
+
+    h2.main_heading {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+        text-align: center;
+        margin-top: 40px;
     }
 
 }
@@ -490,6 +563,20 @@ h2.faq-heading {
 
 
 
+@media (max-width: 768px) {
+    .faq-top-container {
+        background: var(--color-button);  
+        padding: 38px 12px;
+    }
+
+
+    .faq-container {
+
+        padding: 29.594px 22.398px;
+    }
+}
+
+
 /*benefit for investor*/
 
 
@@ -543,6 +630,8 @@ h2.faq-heading {
     .startup_sub_container>div {
         flex-basis: 100%;
     }
+
+   
 }
 
 
@@ -555,4 +644,30 @@ h2.faq-heading {
 
 .footer-container .footer-sub p {
     max-width: 900px;
+}
+
+
+@media (max-width: 768px){
+
+
+    .footer-container {
+        padding: 61px 27px;
+    }
+
+    .footer-container explore-btn{
+        width: 100%;
+    }
+    
+    .footer-sub h1 {
+        font-size: 2.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+   
+
+    footer-sub p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
 }
