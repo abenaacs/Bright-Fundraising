@@ -46,7 +46,7 @@ Jupyter Notebook: For developing and testing machine learning models.
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/fundraising-platform.git
+    git clone https://github.com/abenaacs/fundraising-platform.git
     cd fundraising-platform
     ```
 
