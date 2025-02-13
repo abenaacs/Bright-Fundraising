@@ -7,7 +7,7 @@ const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false);
     const [scrollUp, setScrollUp] = useState(false);
 
-    // Effect to handle scroll events
+    
     useEffect(() => {
         const handleScroll = () => {
             setScrollUp(window.pageYOffset > 0);
@@ -44,7 +44,7 @@ const Navbar = () => {
     return (
         <nav className={navClassName}>
             <div className='px-6'>
-                <div className="flex items-center justify-between h-16">
+                <div className="flex pl-1 items-center justify-between h-16">
                     {/* Logo and brand name */}
                     <div className="flex items-center">
                         <NavLink to='/'>
